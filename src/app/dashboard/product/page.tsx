@@ -1,14 +1,14 @@
 import PageContainer from '@/components/layout/page-container';
 import { buttonVariants } from '@/components/ui/button';
 import { DataTableSkeleton } from '@/components/ui/table/data-table-skeleton';
+import { productInfoContent } from '@/config/infoconfig';
 import ProductListingPage from '@/features/products/components/product-listing';
-import { searchParamsCache, serialize } from '@/lib/searchparams';
+import { searchParamsCache } from '@/lib/searchparams';
 import { cn } from '@/lib/utils';
 import { IconPlus } from '@tabler/icons-react';
 import Link from 'next/link';
 import { SearchParams } from 'nuqs/server';
 import { Suspense } from 'react';
-import { productInfoContent } from '@/config/infoconfig';
 
 export const metadata = {
   title: 'Dashboard: Products'
